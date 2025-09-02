@@ -15,8 +15,3 @@ Below is the use case diagram for the **Booking Management Project**, showing th
 
 ![Booking System Use Case Diagram](alx-booking-uc.png)
 
-cd requirement-analysis
-
-git add alx-booking-uc.png
-git commit -m "Add booking system use case diagram"
-git push origin main
