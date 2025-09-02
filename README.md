@@ -15,26 +15,3 @@ Below is the use case diagram for the **Booking Management Project**, showing th
 
 ![Booking System Use Case Diagram](alx-booking-uc.png)
 
-### PlantUML Source
-The following PlantUML code can be used to regenerate the diagram:
-
-```plantuml
-@startuml
-left to right direction
-
-actor User
-actor Admin
-
-rectangle "Booking System" {
-  User --> (Create Account)
-  User --> (Login)
-  User --> (Search Rooms)
-  User --> (Book Room)
-
-  Admin --> (Manage Bookings)
-  Admin --> (Generate Reports)
-
-  (Book Room) --> (Manage Bookings)
-  (Generate Reports) --> (Manage Bookings)
-}
-@enduml
