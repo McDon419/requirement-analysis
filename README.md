@@ -22,6 +22,32 @@ In short, requirement analysis lays the groundwork for a successful software pro
 
 ---
 
+## Key Activities in Requirement Analysis  
+Requirement analysis is not a one-time task but a structured process involving several activities. Each activity ensures that requirements are well understood, clearly defined, and ready for implementation.  
+
+### Main Activities:  
+1. **Requirement Elicitation**  
+   - Gathering needs from stakeholders using interviews, surveys, workshops, or observations.  
+   - Ensures no important requirements are overlooked.  
+
+2. **Requirement Documentation**  
+   - Recording the requirements in a clear and structured format (e.g., Software Requirement Specification – SRS).  
+   - Provides a reference point throughout the project lifecycle.  
+
+3. **Requirement Analysis & Modeling**  
+   - Breaking down requirements into smaller, manageable parts.  
+   - Using tools like use case diagrams, flowcharts, or prototypes to better understand system behavior.  
+
+4. **Requirement Validation**  
+   - Confirming with stakeholders that documented requirements match their expectations.  
+   - Helps avoid building the wrong system.  
+
+5. **Requirement Management**  
+   - Tracking changes in requirements as the project evolves.  
+   - Ensures consistency and prevents scope creep.  
+
+---
+
 ## Use Case Diagrams
 
 ### What are Use Case Diagrams?
