@@ -1,58 +1,85 @@
-# Requirement Analysis
+# Requirement Analysis  
 
-## What is Requirement Analysis?
-Requirement Analysis is the process of identifying, documenting, and managing the needs and expectations of stakeholders for a system or project. It forms the foundation of software development, ensuring that the final product addresses the right problems and delivers value.
+## What is Requirement Analysis?  
+Requirement Analysis is the process of identifying, documenting, and managing the needs and expectations of stakeholders for a system or project. It forms the foundation of software development, ensuring that the final product addresses the right problems and delivers value.  
 
-During requirement analysis, developers and stakeholders collaborate to clarify what the system should do, how it should behave, and the constraints under which it must operate.
-
----
-
-## Why is Requirement Analysis Important?
-Requirement Analysis is critical because it directly impacts the success or failure of a project. A well-executed requirement analysis ensures that the final system aligns with stakeholder needs, avoids wasted effort, and minimizes costly mistakes later in development.
-
-### Key Reasons Why It’s Important:
-- **Prevents Miscommunication:** Clearly defines expectations so that everyone (stakeholders, developers, testers) shares the same understanding.  
-- **Saves Time and Cost:** Identifies potential issues and risks early, reducing rework and unnecessary development efforts.  
-- **Ensures Business Value:** Confirms that the solution solves the right problems and contributes to organizational goals.  
-- **Improves Quality:** Provides precise criteria for design, development, and testing, leading to a more reliable system.  
-- **Enhances User Satisfaction:** Ensures user needs and pain points are addressed, creating a product that people actually want to use.  
-- **Supports Project Planning:** Helps in estimating timelines, resources, and scope more accurately.
-
-In short, requirement analysis lays the groundwork for a successful software project by ensuring that the team builds **the right system, the right way, for the right users**.
+During requirement analysis, developers and stakeholders collaborate to clarify what the system should do, how it should behave, and the constraints under which it must operate.  
 
 ---
 
-## Key Activities in Requirement Analysis
-Requirement analysis is not a one-time task but a structured process involving several activities. Each activity ensures that requirements are well understood, clearly defined, and ready for implementation.
+## Why is Requirement Analysis Important?  
+Requirement Analysis is crucial because it ensures that the final system meets user needs, aligns with business goals, and avoids costly rework.  
 
-### Main Activities:
-1. **Requirement Elicitation**
-   - Gather needs from stakeholders using interviews, surveys, workshops, and observations.
-   - Techniques: stakeholder interviews, user stories, workshops, shadowing, surveys.
-
-2. **Requirement Documentation**
-   - Record requirements in a clear and structured format (e.g., Software Requirements Specification - SRS, user stories, acceptance criteria).
-   - Provide a single source of truth for team members.
-
-3. **Requirement Analysis & Modeling**
-   - Break down requirements into manageable pieces.
-   - Model behavior using use case diagrams, flowcharts, data models, or prototypes.
-
-4. **Requirement Validation**
-   - Confirm with stakeholders that documented requirements match expectations (reviews, walkthroughs, prototypes).
-   - Reduce misunderstanding and scope drift.
-
-5. **Requirement Management**
-   - Track changes over time and maintain traceability.
-   - Prioritize, version, and handle scope changes to avoid uncontrolled growth.
+- **Clarity**: Eliminates misunderstandings by defining the scope and objectives clearly.  
+- **Prioritization**: Helps determine which features are essential and which are optional.  
+- **Communication**: Acts as a bridge between stakeholders (business owners, users) and the development team.  
+- **Risk Reduction**: Identifies potential issues early, saving time and costs later.  
+- **Quality Assurance**: Provides measurable criteria for testing and validation.  
 
 ---
 
-## Types of Requirements
+## Key Activities in Requirement Analysis  
+1. **Requirement Elicitation** – Gathering requirements from stakeholders using interviews, surveys, workshops, etc.  
+2. **Requirement Documentation** – Clearly recording functional and non-functional requirements.  
+3. **Requirement Validation** – Ensuring requirements are feasible, complete, and aligned with objectives.  
+4. **Requirement Management** – Tracking changes to requirements throughout the project lifecycle.  
 
-In requirement analysis, requirements are typically categorized so the team knows **what** to build, **how well** it must perform, and **why** it exists.
+---
 
-### 1. Functional Requirements
-These specify **what the system should do**—the features and behaviors the software must support.
-**Examples (Hotel Booking App):**
-- Users should be able to **search** hotels by location, date, price
+## Types of Requirements  
+Requirements can be categorized into several types to ensure coverage across business, user, functional, and non-functional needs.  
+
+1. **Business Requirements** – High-level objectives of the organization (e.g., maximize hotel occupancy).  
+2. **User Requirements** – Needs of end-users (e.g., customers should be able to search hotels by location).  
+3. **Functional Requirements** – Define system behavior (e.g., allow booking cancellations up to 24 hours before check-in).  
+4. **Non-Functional Requirements** – Define performance, scalability, and security expectations (e.g., search results must load in ≤2 seconds).  
+
+### Case Study: Hotel Booking System  
+- **Business Requirement:** Increase customer satisfaction by offering multiple payment options.  
+- **User Requirement:** Travelers can filter hotels by price, location, and availability.  
+- **Functional Requirement:** The system must send booking confirmation emails after successful payment.  
+- **Non-Functional Requirement:** The system must handle 1000 concurrent booking requests without downtime.  
+
+---
+
+## Acceptance Criteria  
+
+### What is Acceptance Criteria?  
+Acceptance Criteria (AC) are predefined conditions that a software product or feature must meet to be accepted by stakeholders or end users. They serve as the **definition of done**, ensuring clarity, measurability, and alignment across teams.  
+
+### Why is Acceptance Criteria Important?  
+- **Eliminates Ambiguity:** Provides a clear understanding of what needs to be achieved.  
+- **Guides Development:** Developers know exactly what functionality to implement.  
+- **Supports Testing:** Testers can validate features against specific, measurable conditions.  
+- **Improves Quality:** Ensures features truly meet user and business needs.  
+- **Boosts Confidence:** Stakeholders trust that requirements are fulfilled.  
+
+### Types of Acceptance Criteria  
+1. **Functional Criteria** – Define behaviors (e.g., system prevents double booking).  
+2. **Non-Functional Criteria** – Define qualities (e.g., booking API must respond in ≤2 seconds).  
+3. **Regulatory Criteria** – Ensure compliance (e.g., payment processing must meet PCI-DSS standards).  
+
+### Case Study: Hotel Booking System  
+- A customer can search for hotels by location, price, and date filters.  
+- The booking service prevents reservations if no rooms are available.  
+- Payment processing must support at least two options (credit card, PayPal, or mobile money).  
+- After booking, a confirmation notification is sent instantly to both customer and manager.  
+- Search results must load within **2 seconds** for 95% of user queries.  
+
+---
+
+## Use Case Diagrams  
+
+### What are Use Case Diagrams?  
+A **Use Case Diagram** is a visual representation of how users (actors) interact with a system to achieve specific goals. It captures functional requirements by illustrating the relationships between actors and use cases.  
+
+**Benefits of Use Case Diagrams:**  
+- Provides a **clear overview** of system functionality.  
+- Helps identify **interactions between users and the system**.  
+- Facilitates communication between stakeholders and developers.  
+- Acts as a **foundation for creating detailed requirements and test cases**.  
+
+### Booking System Use Case Diagram  
+Below is the use case diagram for the **Booking Management Project**, showing the primary actors (User and Admin) and their interactions with the system:  
+
+![Booking System Use Case Diagram](alx-booking-uc.png)  
